@@ -204,6 +204,19 @@ def n_queens(n):
     if not solve_n_queens(board, 0, n):
         print("No solution exists")
 
+
+#APEX PROGRAMMING
+class first {
+public static void sendMail(String address, String subject, String body) {
+Messaging.SingleEmailMessagemail=newMessaging.SingleEmailMessage();
+String[] toAddresses = new String[] {address};
+mail.setToAddresses(toAddresses);
+mail.setSubject(subject);
+mail.setPlainTextBody(body);
+Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+}
+}
+
 # Example usage:
 n = 4
 n_queens(n)
